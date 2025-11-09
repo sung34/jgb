@@ -12,11 +12,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "자인그린바이오",
-  icons: "/favicon.svg",
-  description: "",
-};
 
 export async function generateStaticParams() {
   return [{ lang: 'ko' }, { lang: 'en' }];
