@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { toMetadata } from "@/lib/seo";
-import Image from "next/image";
 
 export async function generateMetadata({
   params,
@@ -25,8 +24,8 @@ export default function Certificate() {
         <h1 className="md:text-2xl font-bold text-xl underline underline-offset-8">특허증 (Certificate of Patent)</h1>
       </div>
       <div className=" flex flex-col justify-center items-center">
-        <Image width={600} height={600} alt="" src={"/contents/about/certificate/cert1.jpg"} />
-        <Image width={565} height={600} alt="" src={"/contents/about/certificate/cert2.jpg"} />
+        <img width={600} height={600} alt="" src={"/contents/about/certificate/cert1.jpg"} />
+        <img width={565} height={600} alt="" src={"/contents/about/certificate/cert2.jpg"} />
       </div>
     </div>
   );
