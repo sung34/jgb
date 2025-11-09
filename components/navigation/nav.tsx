@@ -56,7 +56,7 @@ export default function  Nav({ lang = "ko" }: { lang: string }) {
         </div>
 
         <Link href={`${base}/`} className="flex justify-center items-center gap-3 ml-1.5 normal-case md:text-xl text-sm font-bold">
-          <img src="/favicon.png" alt={lang === "en" ? "Jain Green Bio logo" : "자인그린바이오 로고"} width={18} height={18} className="mr-1" />
+          <img src="/favicon.svg" alt={lang === "en" ? "Jain Green Bio logo" : "자인그린바이오 로고"} width={18} height={18} className="mr-1" />
           {L.brand}
         </Link>
       </div>
