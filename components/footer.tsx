@@ -46,7 +46,7 @@ export default function Footer({ lang = "ko" }: { lang?: string }) {
       <aside>
         <div className="flex gap-3 items-center justify-center mb-4">
           <div className="w-[52px] h-[52px] bg-white rounded-full flex justify-center items-center p-1">
-            <Image src="/icon.png" alt="Logo" width={36} height={36} />
+            <img src="/favicon.svg" alt="Logo" width={36} height={36} />
           </div>
           <span className="font-bold">
             <span className="text-lg">{L.brandTop}</span>
