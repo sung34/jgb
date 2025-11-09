@@ -3,7 +3,6 @@ import fs from "fs/promises";
 import path from "path";
 import type { Metadata } from "next";
 
-type Lang = "ko" | "en";
 
 export async function loadSeoJSON(key: string) {
   const parts = key.split("/").filter(Boolean);              // ["about","certificate"]
@@ -13,13 +12,13 @@ export async function loadSeoJSON(key: string) {
   return JSON.parse(raw) as {
     page: string;
     canonical?: string;
-    ogImage?: Record<Lang, string>;
-    locale: Record<Lang, { title: string; description: string; keywords: string[] }>;
+    ogImage?: Record<string, string>;
+    locale: Record<string, { title: string; description: string; keywords: string[] }>;
     alternates?: { languages?: Record<string, string> };
   };
 }
 
-export async function toMetadata(page: string, lang: Lang, pathname: string): Promise<Metadata> {
+export async function toMetadata(page: string, lang: string, pathname: string): Promise<Metadata> {
   const seo = await loadSeoJSON(page);
   const loc = seo.locale[lang];
   const ogImg = seo.ogImage?.[lang];

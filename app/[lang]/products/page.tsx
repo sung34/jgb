@@ -7,10 +7,17 @@ export async function generateMetadata({
 }: {
   params: { lang: string };               // ❗ string으로 받고
 }): Promise<Metadata> {
-  const lang = params.lang === "en" ? "en" : "ko"; // 내부에서 좁히기
+   // ✅ 먼저 언래핑
+  const { lang } = await params;
+  // ✅ 'ko' | 'en'으로 정규화
+  const locale: "ko" | "en" = lang === "en" ? "en" : "ko";
+  // ✅ 실제 보이는 경로 사용(리다이렉트/리라이트 정책에 맞춰)
   const pathname = lang === "en" ? "/en/products" : "/products";
-  return toMetadata("products", lang, pathname);
+  return toMetadata("products", lang, pathname);    // ← 로더가 중첩 지원이면 이렇게
+  // (로더가 평탄키만 지원이면 "certificate"로 맞추고 파일 위치도 평탄하게)
 }
+
+
 export default function Products() {
   return (
     <div className="mt-6 mx-12 mb-6">
