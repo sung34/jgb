@@ -1,0 +1,28 @@
+{
+  "ko": {
+    "heading": "펄프 멀칭지 vs 비닐멀칭(PE)",
+    "leftTitle": "펄프 멀칭지",
+    "rightTitle": "비닐멀칭(PE)",
+    "rows": [
+      { "label": "소재·출처", "left": "펄프 기반(자연순환 지향)", "right": "석유계 플라스틱" },
+      { "label": "사용 후 처리", "left": "수거 공정 최소화(자연 분해 지향)", "right": "수거·운반·소각/매립 비용" },
+      { "label": "토양 영향", "left": "잔류 플라스틱 없음", "right": "폐비닐·미세플라스틱 우려" },
+      { "label": "재배 기능", "left": "잡초 억제·수분 보존·온도 유지", "right": "잡초 억제 중심(환경부담)" },
+      { "label": "현장 적용", "left": "규격 맞춤·시공 가이드", "right": "관행 중심" }
+    ],
+    "note": "작물·환경에 따라 체감 효과는 상이할 수 있습니다."
+  },
+  "en": {
+    "heading": "Pulp Mulch vs Plastic Mulch (PE)",
+    "leftTitle": "Pulp Mulch",
+    "rightTitle": "Plastic Mulch (PE)",
+    "rows": [
+      { "label": "Material origin", "left": "Pulp-based (circularity-oriented)", "right": "Petrochemical plastic" },
+      { "label": "After-use handling", "left": "Minimal retrieval (biodegradation-oriented)", "right": "Collection, transport, incineration/landfill" },
+      { "label": "Soil profile", "left": "No plastic residues", "right": "Microplastic concerns" },
+      { "label": "Cultivation benefits", "left": "Weed suppression, moisture retention, temperature buffer", "right": "Mainly weed control; env. burden" },
+      { "label": "Field fit", "left": "Custom sizes & install guides", "right": "Conventional practice" }
+    ],
+    "note": "Results vary by crop and environment."
+  }
+}

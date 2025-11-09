@@ -1,0 +1,28 @@
+{
+  "ko": {
+    "titleLines": ["미생물 생분해", "펄프 멀칭지란?"],
+    "paragraphs": [
+      "친환경 미생물 생분해 펄프멀칭지는 순수 펄프를 이용한 멀칭지로,",
+      "밭·논·하우스 토양 표면을 덮어 잡초 억제, 생장 촉진, 제균·제충,",
+      "토양 침식 방지, 토양 수분 유지, 지온 조절 효과를 제공합니다.",
+      "사용 후 친환경적으로 생분해되어 토양의 유기질 순환에 기여합니다."
+    ],
+    "cta": { "label": "문의하기", "href": "/contact" },
+    "bgImage": "/contents/home/bg.jpg",
+    "bgAlt": "작물이 자라는 밭 전경",
+    "overlayClass": "hero-overlay bg-black/40"
+  },
+  "en": {
+    "titleLines": ["Microbial-biodegradable", "Pulp Mulch Paper"],
+    "paragraphs": [
+      "Pulp-based biodegradable mulch that covers the soil surface in fields and greenhouses,",
+      "supporting weed suppression, growth, sanitation, erosion control,",
+      "moisture retention, and soil temperature buffering.",
+      "After use, it biodegrades in an eco-friendly manner and contributes back to soil organic matter."
+    ],
+    "cta": { "label": "Contact", "href": "/en/contact" },
+    "bgImage": "/contents/home/bg.jpg",
+    "bgAlt": "Field landscape with crops",
+    "overlayClass": "hero-overlay bg-black/40"
+  }
+}

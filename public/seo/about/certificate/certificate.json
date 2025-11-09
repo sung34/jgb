@@ -1,0 +1,51 @@
+{
+  "page": "certificate",
+  "canonical": "/about/certificate",
+  "locale": {
+    "ko": {
+      "title": "자인그린바이오 | 특허",
+      "description": "자인그린바이오는 펄프 기반의 친환경 생분해 멀칭지를 연구·제조합니다. 함평(동함평산단)을 거점으로 현장성·경제성을 갖춘 멀칭 솔루션을 제공하며, 시험연구와 파트너 협업을 통해 지속가능 농업을 실현합니다.",
+      "keywords": [
+        "자인그린바이오",
+        "특허",
+        "펄프 멀칭지",
+        "종이 멀칭지",
+        "생분해 멀칭",
+        "친환경 멀칭",
+        "친환경 농자재",
+        "ESG 농업",
+        "전남 함평",
+        "동함평산단",
+        "시험연구",
+        "잡초 억제",
+        "수분 보존",
+        "토양 온도",
+        "B2B 납품",
+        "도매",
+        "샘플 문의"
+      ]
+    },
+    "en": {
+      "title": "Jain Green Bio | Patents",
+      "description": "JainGreenBio develops and manufactures pulp-based biodegradable mulching sheets. Based in Hampyeong, we deliver practical, economic solutions backed by field trials and partnerships for sustainable agriculture.",
+      "keywords": [
+        "JainGreenBio",
+        "patents",
+        "pulp mulch paper",
+        "paper mulch",
+        "biodegradable mulch",
+        "eco-friendly agriculture",
+        "Hampyeong",
+        "field trials",
+        "B2B supply",
+        "sample request"
+      ]
+    }
+  },
+  "alternates": {
+    "languages": {
+      "ko-KR": "/about/certificate",
+      "en": "/en/about/certificate"
+    }
+  }
+}

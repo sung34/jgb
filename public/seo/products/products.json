@@ -1,0 +1,72 @@
+{
+  "page": "products",
+  "canonical": "/products",
+
+  "locale": {
+    "ko": {
+      "title": "자인그린바이오 | 제품",
+      "description": "펄프 기반 생분해 멀칭지. 주문 제작·샘플 제공, 도매·납품 문의 가능.",
+      "keywords": [
+        "펄프 멀칭지 규격",
+        "스마트 팜",
+        "멀칭지 두께",
+        "멀칭지 폭",
+        "멀칭지 길이",
+        "내구성 멀칭",
+        "내열성 멀칭",
+        "내수성 멀칭",
+        "광 차단",
+        "투수성",
+        "통기성",
+        "검정 멀칭지",
+        "갈색 멀칭지",
+        "멀칭기 시공 가능",
+        "드립관 호환",
+        "노지 재배",
+        "시설 재배",
+        "비닐하우스",
+        "작물별 멀칭 가이드",
+        "데이터시트",
+        "제품 스펙",
+        "샘플 요청",
+        "대량 주문",
+        "도매 가격",
+        "납품",
+        "친환경 농자재",
+        "친환경 멀칭지",
+        "생분해 멀칭지 스펙",
+        "종이 멀칭지"
+      ]
+    },
+    "en": {
+      "title": "Jain Green Bio | Products",
+      "description": "pulp-based biodegradable mulch. custom orders and samples for wholesale supply.",
+      "keywords": [
+        "pulp mulch specs",
+        "mulch thickness",
+        "custom width",
+        "durability",
+        "heat resistance",
+        "water resistance",
+        "light blocking",
+        "permeability",
+        "mulch layer compatible",
+        "drip irrigation",
+        "open-field",
+        "greenhouse",
+        "datasheet",
+        "sample request",
+        "bulk order",
+        "wholesale",
+        "eco farm input",
+        "smart farming"
+      ]
+    }
+  },
+  "alternates": {
+    "languages": {
+      "ko-KR": "/products",
+      "en": "/en/products"
+    }
+  }
+}

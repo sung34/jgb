@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+@plugin "daisyui" {
+  themes: emerald --default, dark --prefersdark, forest, bumblebee, lofi, dim;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('/fonts/pretendard/Pretendard-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  /* or 'optional' to reduce FOIT further */
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('/fonts/pretendard/Pretendard-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('/fonts/pretendard/Pretendard-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('/fonts/pretendard/Pretendard-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: Pretendard, ui-sans-serif, system-ui, -apple-system, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, 'Noto Sans KR', 'Apple SD Gothic Neo',
+    'Malgun Gothic', sans-serif;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  /* Use Pretendard as the default site font (local files under public/fonts/pretendard/) */
+  font-family: 'Pretendard', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 지원 브라우저 */
+@supports (animation-timeline: view()) {
+  @keyframes sd-reveal {
+    from { opacity: 0; transform: var(--sd-transform, translateY(10px)); }
+    to   { opacity: 1; transform: none; }
+  }
+
+  /* 스크롤 구동 기본 */
+  .sd {
+    animation-name: sd-reveal;
+    animation-duration: .45s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+    animation-timeline: view();
+    animation-range: entry var(--sd-start, 0%) cover 30%;
+  }
+
+  /* 방향 */
+  .sd-up    { --sd-transform: translateY(-10px); }
+  .sd-down  { --sd-transform: translateY(10px); }
+  .sd-left  { --sd-transform: translateX(-10px); }
+  .sd-right { --sd-transform: translateX(10px); }
+
+  /* 스테이지(뷰 타임라인 전용) */
+  .sd-s1 { --sd-start: 0%;  }
+  .sd-s2 { --sd-start: 25%; }
+  .sd-s3 { --sd-start: 50%; }
+  .sd-s4 { --sd-start: 75%; }
+  .sd-s5 { --sd-start: 100%; }
+
+  /* ★ 부팅용: 시간 기반 1회 (sd와 분리) */
+  .sd-boot {
+    animation-name: sd-reveal;
+    animation-duration: .45s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+    animation-timeline: auto;            /* time-based */
+    animation-delay: var(--sd-delay, 0ms);
+  }
+  .sd-d1 { --sd-delay:   0ms; }
+  .sd-d2 { --sd-delay: 250ms; }
+  .sd-d3 { --sd-delay: 500ms; }
+  .sd-d4 { --sd-delay: 750ms; }
+  .sd-d5 { --sd-delay: 1000ms; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .sd, .sd-boot { animation: none !important; opacity: 1 !important; transform: none !important; }
+  }
+}
+
+/* 미지원 브라우저: 그냥 보이기 */
+@supports not (animation-timeline: view()) {
+  .sd, .sd-boot { opacity: 1; transform: none; }
+}
