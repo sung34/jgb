@@ -22,18 +22,13 @@ export async function generateStaticParams() {
   return [{ lang: 'ko' }, { lang: 'en' }];
 }
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
-  params,
 }: {
   children: React.ReactNode;
-  // ✅ Next 16: Promise 타입으로 받기
-  params: Promise<{ lang: string }>;
 }) {
-  const { lang } = await params;
-  const locale: "ko" | "en" = lang === "en" ? "en" : "ko";
   return (
-    <html lang={locale}>
+    <html lang={'ko'}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased select-none`}
       >
